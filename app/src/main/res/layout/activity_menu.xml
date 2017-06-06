@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <com.sda.balys.robert.weeding.view.MenuWeedingItem
+       android:id="@+id/expense"
+       android:layout_height="wrap_content"
+       app:label="Wydatki"
+       app:icon_res_id="@drawable/obraczki"
+       app:layout_widthPercent="50%"/>
+    <com.sda.balys.robert.weeding.view.MenuWeedingItem
+        android:id="@+id/visitors"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/expense"
+        app:icon_res_id="@drawable/obraczki"
+        app:label="Goście"
+        app:layout_widthPercent="50%"/>
+</android.support.percent.PercentRelativeLayout>
